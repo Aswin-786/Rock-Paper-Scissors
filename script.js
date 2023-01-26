@@ -107,10 +107,14 @@ const player = document.getElementById('player-select')
 const computer = document.getElementById('computer-select')
 const button = document.querySelectorAll('.btns')
 const statusd = document.getElementById('status')
+const yourScore = document.getElementById('span')
+const newGame = document.getElementById('new')
 
 const rock_img = "Rock.png"
 const paper_img = "Paper.png"
 const scissors_img = "Scissors.png"
+
+let trackScore = {'computerScore':0, 'playerScore':0}
 
 rps = ['Rock', 'Paper', 'Scissor']
 
@@ -150,7 +154,7 @@ const auto = (computerChoice) => {
   } else {
     computer.src = scissors_img
   }
-// updateResult(computer.src, player.src)
+
 }
 
 const calling = (playerChoice) => {
@@ -159,7 +163,8 @@ const calling = (playerChoice) => {
  auto(computerChoice)
  let score =  makeScore(playerChoice,computerChoice ) 
  updates(score)
- 
+ trackScore['playerScore'] += score
+ yourScore.innerText = trackScore['playerScore']
 
 }
 
@@ -202,3 +207,11 @@ const updates = (score) => {
 }
 
 // const updateResult = (co)
+newGame.onclick = () => {
+  player.src = scissors_img
+  computer.src = scissors_img
+  statusd.innerText = "Start.."
+  trackScore['playerScore'] = 0
+  statusd.style.color = "white"
+  yourScore.innerText = trackScore['playerScore']
+}
