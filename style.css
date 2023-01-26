@@ -7,10 +7,6 @@
 body {
   background-image: linear-gradient(to right, #A9F1DF , #FFBBBB);
 }
-main {
- 
-  
-}
 
 .computer {
   height: 150px;
@@ -18,11 +14,13 @@ main {
   border: dotted black;
 }
 
-.computer p {
-  border: none;
+.computer img {
+  width: 130px;
+  height: auto;
 }
+
 .score-board {
-  height: 4s0px;
+  height: 50px;
   color: white;
   background: black;
 }
@@ -31,6 +29,11 @@ main {
   height: 150px;
   width: 150px;
   border: dotted black;
+}
+
+.gamer img {
+  width: 130px;
+  height: auto;
 }
 
 button {

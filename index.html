@@ -16,49 +16,48 @@
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
+  
   <main class="container-fluid">
-
-    <div class="output mt-1">
+    <div class="game mt-1">
       <div class="container ">
         <div class="col justify-content-center align-content-center">
-          <h5 class="text-center">
-            Computer
-          </h5>
+          <div class="computer-name">
+            <h5 class="text-center" id="computer-name">
+              Computer
+            </h5>
+          </div>
           <div class="computer d-grid m-auto mb-5">
-            <img class="m-auto display-1" src="rock.png">
+            <img class="m-auto display-1" id="computer-select" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGl8rflKvOAtHGAeTbVNihckaeR8d_FOdrXqpNAQJvsDbMfZm5DcpdB3P_7FGsOqU90o&usqp=CAU">
           </div>
           <div class="score-board container d-grid justify-content-center align-content-center my-auto mb-3 ">
-            <p class="fs-1">
+            <p class="fs-2 m-auto"  id="status">
               Draw..
             </p>
           </div>
-          <h5 class="text-center">
-            You
-          </h5>
+          <div class="player-name">
+            <h5 class="text-center">
+              You
+            </h5>
+          </div>
           <div class="gamer d-grid m-auto">
-
+            <img class="m-auto display-1" id="player-select" src="https://www.pngitem.com/pimgs/m/109-1094400_rock-paper-scissors-png-clipart-rock-paper-scissor.png">
           </div>
           <div class="total-score text-center mt-2 ">
-            <p class="">
-              your Score : <span id="span">1</span>
-            </p>
-          </div>
-          
+            <h5 class="">
+              Your Score : <span id="span">1</span>
+            </h5>
+          </div>  
         </div>
         <div class="container text-center">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button> <br><br>
-        <button>Scissors</button>
+          <button id="Rock" class="" value="Rock">Rock</button>
+          <button id="Paper" class="" value="Paper">Paper</button>
+          <button id="Scissors" class="" value="Scissors">Scissors</button> <br><br>
+          <button id="Run" class="" value="Run">Run</button>
+        </div>
     </div>
-    </div>
+
   </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+  
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
