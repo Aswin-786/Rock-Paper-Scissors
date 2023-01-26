@@ -1,14 +1,3 @@
-/*
-  Rock Paper Scissors 🚀🔥
-  Concepts covered in this project
-    👉 For loops
-    👉 Dom Manipulation
-    👉 Variables
-    👉 Conditionals (if else if)
-    👉 Template Literals
-    👉 Event Listeners
-    👉 Higher order Function (Math.random())
-*/
 
 // ** getComputerChoice randomly selects between `rock` `paper` `scissors` and returns that string **
 // getComputerChoice() 👉 'Rock'
@@ -76,3 +65,21 @@ function endGame() {
 }
 
 playGame()
+
+const rock = document.getElementById('Rock')
+const paper = document.getElementById('Paper')
+const scissors = document.getElementById('Scissors')
+const player = document.getElementById('player-select')
+
+
+rock.onclick = () => {
+  player.src="Rock.png"
+}
+
+paper.onclick = () => {
+  player.src="Paper.png"
+}
+
+scissors.onclick = () => {
+  player.src="Scissors.png"
+}
