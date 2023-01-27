@@ -19,7 +19,7 @@ let trackScore = {'computerScore':0, 'playerScore':0}
 
 rps = ['Rock', 'Paper', 'Scissor']
 
-
+// button clicks
 rock.onclick = () => {
   player.src = rock_img
   let playerChoice = 'Rock'
@@ -38,7 +38,7 @@ scissors.onclick = () => {
   calling(playerChoice)
 }
 
-
+// randomly computer selects 
 const getComputerChoice = (rps) => {
   const random = Math.floor( Math.random() * rps.length);
   let computerChoice1 = rps[random];
@@ -46,6 +46,7 @@ const getComputerChoice = (rps) => {
 }
 
 
+// updating computer choice to DOM
 const auto = (computerChoice) => {
   if ( computerChoice == 'Rock') {
     computer.src = rock_img
@@ -59,7 +60,6 @@ const auto = (computerChoice) => {
 
 const calling = (playerChoice) => {
  const computerChoice = getComputerChoice(rps)
- console.log({computerChoice})
  auto(computerChoice)
  let score =  makeScore(playerChoice,computerChoice ) 
  updates(score)
@@ -69,6 +69,7 @@ const calling = (playerChoice) => {
 }
 
 
+// finding player score
 const makeScore = (playerChoice, computerChoice ) => {
   let score;
 
@@ -107,6 +108,7 @@ const updates = (score) => {
 }
 
 
+// clear all
 newGame.onclick = () => {
   player.src = scissors_img
   computer.src = scissors_img
