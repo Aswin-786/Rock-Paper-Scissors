@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(to right, #A9F1DF , #FFBBBB);
+  background-image: linear-gradient(-90deg, #A9F1DF , #FFBBBB);
+  background-size: 150%;
 }
 
 .computer {
   height: 150px;
   width: 150px;
   border: dotted black;
+  background-color: black;
 }
 
 .computer img {
@@ -24,12 +26,15 @@ body {
   height: 50px;
   color: white;
   background: black;
+  border-radius: 10px;
+  max-width: 300px;
 }
 
 .gamer {
   height: 150px;
   width: 150px;
   border: dotted black;
+  background-color: black;
 }
 
 .gamer img {
@@ -38,16 +43,29 @@ body {
   object-fit: contain;
 }
 
+.total-score {
+  
+}
 button {
   width: 150px;
   height: 100px;
   font-size: 25px;
+  background-color: white;
+  border: black solid;
+  border-radius: 20px;
+  font-weight: bolder;
+  outline: none;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
 }
 
 @media only screen and (max-width: 600px)  {
   button {
     width: 100px;
     height: 80px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
