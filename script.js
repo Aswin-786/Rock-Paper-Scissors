@@ -58,6 +58,7 @@ const auto = (computerChoice) => {
 
 }
 
+// calling score & auto functions
 const calling = (playerChoice) => {
  const computerChoice = getComputerChoice(rps)
  auto(computerChoice)
